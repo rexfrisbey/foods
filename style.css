@@ -1,3 +1,6 @@
+body {
+    margin:0;
+}
 a {
     color:green;
     font-weight:bold;
@@ -5,7 +8,7 @@ a {
 }
 
 header {
-    background-color:#a21717;
+    /* background-color:#a21717; */
     color:white;
     text-align: center;
 }
@@ -18,13 +21,12 @@ h1 {
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin:0;
 }
 
 p {
     font-size:1rem;
-    font-style: italic;
     line-height: 1.5rem;
-    text-indent:50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 #second {
@@ -40,4 +42,25 @@ main nav ul {
     width:80%;
     margin-right:auto;
     margin-left:auto;
+}
+nav {
+    border: 1px solid #a21717;
+    border-radius:20px;
+}
+nav ul li {
+    display:inline-block;
+    padding: 10px 20px;
+}
+h2 {
+    margin:0;
+}
+.logo {
+    width:100px;
+}
+.hero {
+    height:300px;
+    width:100%;
+    background-image:url('images/asian-food.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
