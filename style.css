@@ -1,5 +1,7 @@
 body {
     margin:0;
+    background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
+    background-attachment: fixed;
 }
 a {
     color:green;
@@ -42,14 +44,28 @@ main nav ul {
     width:80%;
     margin-right:auto;
     margin-left:auto;
+    background-color:#ffffff;
+    max-width:2048px;
+    min-width:960px;
+    box-shadow: 0 3px 3px rgba(66,66,66,0.3);
 }
 nav {
-    border: 1px solid #a21717;
-    border-radius:20px;
+    /* border: 1px solid #a21717;
+    border-radius:20px; */
+    background-color:#a21717;
+}
+nav ul {
+    margin:0;
+    padding:0;
 }
 nav ul li {
     display:inline-block;
-    padding: 10px 20px;
+    border-right:1px solid #fff;  
+}
+nav a {
+    display:inline-block;
+    color:#fff;
+    padding: 15px 25px;
 }
 h2 {
     margin:0;
@@ -58,9 +74,13 @@ h2 {
     width:100px;
 }
 .hero {
-    height:300px;
+    height:350px;
     width:100%;
     background-image:url('images/asian-food.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 95%;
+    text-align: center;
+    color:#fff;
+    padding-top:30px;
 }
