@@ -1,3 +1,11 @@
+* {
+   box-sizing: border-box; 
+}
+body {
+    margin:0;
+    background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
+    background-attachment: fixed;
+}
 /* Color Theme Swatches in Hex */
 .Flavour-1-hex { color: #A60512; }
 .Flavour-2-hex { color: #5A7302; }
@@ -18,12 +26,6 @@
 .Flavour-3-hsla { color: hsla(45, 96, 48, 1); }
 .Flavour-4-hsla { color: hsla(22, 96, 38, 1); }
 .Flavour-5-hsla { color: hsla(0, 0, 95, 1); }
-
-body {
-    margin:0;
-    background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
-    background-attachment: fixed;
-}
 a {
     color:green;
     font-weight:bold;
@@ -58,6 +60,9 @@ p {
 .list {
     font-size:1rem;
 }
+.content {
+    padding:30px;
+}
 main nav ul {
     font-weight: bold;
 }
@@ -74,6 +79,9 @@ nav {
     /* border: 1px solid #a21717;
     border-radius:20px; */
     background-color:#a21717;
+    position:sticky;
+    top:0;
+    z-index: 2;
 }
 nav ul {
     margin:0;
@@ -81,12 +89,16 @@ nav ul {
 }
 nav ul li {
     display:inline-block;
-    border-right:1px solid #fff;  
+    /* border-right:1px solid #fff;   */
 }
 nav a {
     display:inline-block;
     color:#fff;
     padding: 15px 25px;
+}
+nav a:hover {
+    background-color:#F2B705;
+    color:#000;
 }
 h2 {
     margin:0;
@@ -95,6 +107,7 @@ h2 {
     width:100px;
 }
 .hero {
+    /* height:calc(100vh - 228px); */
     height:350px;
     width:100%;
     background-image:url('images/asian-food.jpg');
@@ -104,4 +117,25 @@ h2 {
     text-align: center;
     color:#fff;
     padding-top:30px;
+}
+.content-image {
+    width:300px;
+    float:left;
+    padding:20px;
+}
+.clear {
+    clear:left;
+}
+.columns {
+    float:left;
+    width:30%;
+}
+.move {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+.position {
+    position: relative;
 }
